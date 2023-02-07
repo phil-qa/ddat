@@ -1,9 +1,9 @@
-# Title:cmc_ex_04_naming
-# Purpose : TO review the naming approaches
-# Instructions : Review the code below and determine what
-# (if anything) could be improved - your assesment will be used later
-import datetime
+# Title: cmc_ex_06_self_documenting
+# Purpose : To review the processes involved with self documenting code
+# Instructions : The following code is from cmc_ex_04. Review the naming and add appropriate
+#                commentrary using comments and doctrings. If cmc_ex_04 was modified you may use it here
 import math
+from datetime import datetime
 
 yyyymmddasstring = str(datetime.datetime.now().date())
 

@@ -3,26 +3,34 @@
 # Instructions : Review the code below and determine the
 # complexity
 import urllib.request
-import BeautifulSoup as bs
+from bs4 import BeautifulSoup as bs
 
-def word_count(search_word, target):
+def word_count(target, search_word):
     '''
     Accepts search_word and returns the number of times seen in links on a page
     :param target: base url to search
     :param search_word: word to search for
     :return:
     '''
-
-    target_url = target
-    response = urlli(target.format(search_word))
+    response = urllib.request.urlopen(target)
     total_hit_count = 0
 
     if response is not None:
         html_page = bs(response, 'html.parser')
 
         word_hit_links = [link for link in html_page.select('a')
-                     if link['href'].find(search_word)]
+                     if search_word in link]
 
         if len(word_hit_links) >0 :
-            total_hit_count += count(search_word, )
+            for link in word_hit_links:
+                total_hit_count += link.count(search_word)
+
+    if total_hit_count == 0:
+        return "No hits found"
+    else:
+        return f"There were {total_hit_count} Hits"
+
+
+were_there_words = word_count('https://en.wikipedia.org/wiki/Natural_gas', 'gas')
+print(were_there_words)
 
