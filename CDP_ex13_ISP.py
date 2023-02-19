@@ -4,8 +4,8 @@
 #                controls the flow of gas. There are two derived classes
 #                but this currently it does not meet ISP,
 #                This is reflected when it is run.
-#                Refactor the code to make the right elements of the class
-#                abstract
+#                Implement an abstract base class for SupplyGate (all abstract methods
+#                 should be annotated with @abstractmethod
 
 class SupplyGate:
     def __init__(self, identifier, max_flow):
