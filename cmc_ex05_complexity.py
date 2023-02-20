@@ -24,6 +24,11 @@ def word_count(target, search_word):
         if len(word_hit_links) >0 :
             for link in word_hit_links:
                 total_hit_count += link.count(search_word)
+                if total_hit_count > 0:
+                    if total_hit_count < 10:
+                        print('Less than 210 found')
+                    elif total_hit_count >10 and total_hit_count <20:
+                        print('there was a standard value found')
 
     if total_hit_count == 0:
         return "No hits found"
