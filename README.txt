@@ -1,4 +1,4 @@
-This repo contains all the exercises and proposed solutions for supporting DDAT MSE delivery.
+This repo contains all the exercises and proposed solutions for supporting DDAT MSE delivery. The class image contains these files and a powershell script to sync the repo.
 
 Setup:
 using the image supplied for the course, all machines should have network visibility of the instructor machine
