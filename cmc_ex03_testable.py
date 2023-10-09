@@ -1,9 +1,11 @@
 # Title:cmc_ex03_testable.py
 # Purpose : To determine processes for making things more testable
 # Instructions :The following code is to check the strength of a user input
-# for a password. Refactor the code making it testable also it’s not that functional so make it functional. Try
-# and write tests for it (inline or using unit tests)
-# The following criteria are required :
+# for a password. Using an appropriate test framework (if necessary grab documentation for unittests at
+# https://docs.python.org/3/library/unittest.html)
+# Review the code below and break the elements into small units of work with acceptance criteria
+# expressed in Given When Then format.
+# The following criteria are required of the password :
 # At least 8 chars
 # At least one upper case letter
 # At least one lower case letter

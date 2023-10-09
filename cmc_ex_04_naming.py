@@ -1,7 +1,7 @@
 # Title:cmc_ex_04_naming
 # Purpose : TO review the naming approaches
 # Instructions : Review the code below and determine what
-# (if anything) could be improved - your assesment will be used later
+# (if anything) could be improved - your assessment will be used later
 import datetime
 import math
 
